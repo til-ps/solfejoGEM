@@ -8,8 +8,17 @@
     <title>Project Music</title>
 </head>
 <body>
-    <div class='container'>
+    <section>
+        <label for="bpm">BPM:<input name="bpm" type="number"></label>
+        <label for="compasso">Qual o modelo de compasso?</label>
+        <div id="compasso">
+            <label for="compasso">Binário<input type="radio" name="compasso"></label>
+            <label for="compasso">Ternário<input type="radio" name="compasso"></label>
+            <label for="compasso">Quartenário<input type="radio" name="compasso"></label>
+        </div>
+        <button>Iniciar</button>
+    </section>
+    <div id="container">
         <div></div>
     </div>
 </body>
-</html>

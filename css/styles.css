@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR');
 body {
     margin: 0;
     display: flex;
@@ -5,9 +6,8 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    position: relative;
 }
-.container div {
+#container div {
    height: 13vh;
    width: 13vh;
    border-radius: 50%;
@@ -15,8 +15,21 @@ body {
    animation: 2s levare ease-in, 4s 2s compasso4  infinite;
    position: relative;
 }
-.container {
+#container {
     animation: 2s levareContainer ease-out;
+    display: none;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Noto Serif KR', sans-serif;
+    font-size: 14pt;
+    letter-spacing: 1.5px;
+}
+section>* {
+    margin-bottom: 20px;
 }
 @keyframes compasso4 {
     0% {
