@@ -10,10 +10,11 @@ div {
    height: 80px;
    width: 80px;
    border-radius: 50%;
-   background-color: lightcoral;
-   animation: 2s action infinite;
-}
-@keyframes action {
+   background-color: lightblue;
+   animation: 2s compasso2 infinite;
+   position: relative;
+} 
+@keyframes compasso4 {
     0% {
         transform: translateY(40vh);
     }
@@ -28,5 +29,36 @@ div {
     }
     100% {
         transform: translateY(40vh);
+    }
+}
+@keyframes compasso3 {
+    0% {
+        transform: translateY(40vh);
+    }
+    33.3% {
+        transform: translateX(20vw);
+    }
+    66.6% {
+        transform: translateY(-40vh);
+    }
+    100% {
+        transform: translateY(40vh);
+    }
+}
+@keyframes compasso2 {
+    0% {
+        transform: translateY(30vh);
+    }
+    25% {
+        transform: translate(20vw, 35vh);
+    }
+    50% {
+        transform: translate(5vw, 10vh)
+    }
+    75% {
+        transform: translateY(-40vh);
+    }
+    100% {
+        transform: translateY(30vh);
     }
 }
