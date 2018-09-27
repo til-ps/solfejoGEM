@@ -5,15 +5,19 @@ body {
     align-items: center;
     width: 100vw;
     height: 100vh;
+    position: relative;
 }
-div {
+.container div {
    height: 13vh;
    width: 13vh;
    border-radius: 50%;
-   background-color: lightblue;
-   animation: 2s levare linear, 4s 2s compasso2 infinite;
+   background-color: red;
+   animation: 2s levare ease-in, 4s 2s compasso4  infinite;
    position: relative;
-} 
+}
+.container {
+    animation: 2s levareContainer ease-out;
+}
 @keyframes compasso4 {
     0% {
         transform: translateY(40vh);
@@ -22,7 +26,7 @@ div {
         transform: translateX(-40vh);
     }
     50% {
-        transform: translateX(40vh);
+        transform: translateX(40vh) ;
     }
     75% {
         transform: translateY(-40vh);
@@ -64,12 +68,20 @@ div {
 }
 @keyframes levare {
     0% {
-        transform: translate(-20vh, 40vh);
+        transform: translateY(40vh);
     }
     50% {
         transform: translateY(-40vh);
     }
     100% {
         transform: translateY(40vh);
+    }
+}
+@keyframes levareContainer {
+    0% {
+        transform: translateX(-40vh);
+    }
+    50% {
+        transform: translateX(0vh);
     }
 }
