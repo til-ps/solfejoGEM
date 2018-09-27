@@ -11,7 +11,7 @@ div {
    width: 80px;
    border-radius: 50%;
    background-color: lightblue;
-   animation: 2s compasso2 infinite;
+   animation: 2s levare linear, 4s 2s compasso4 infinite;
    position: relative;
 } 
 @keyframes compasso4 {
@@ -60,5 +60,16 @@ div {
     }
     100% {
         transform: translateY(30vh);
+    }
+}
+@keyframes levare {
+    0% {
+        transform: translate(-20vw, 40vh);
+    }
+    50% {
+        transform: translateY(-40vh);
+    }
+    100% {
+        transform: translateY(40vh);
     }
 }
