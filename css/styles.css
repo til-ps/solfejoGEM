@@ -12,7 +12,6 @@ body {
    width: 13vh;
    border-radius: 50%;
    background-color: red;
-   animation: 2s levare ease-in, 4s 2s compasso4  infinite;
    position: relative;
 }
 #container {

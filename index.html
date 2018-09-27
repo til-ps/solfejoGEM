@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel='stylesheet' href='css/styles.css'>
+    <script defer src='js/script.js'></script>
     <title>Project Music</title>
 </head>
 <body>
     <section>
         <label for="bpm">BPM:<input name="bpm" type="number"></label>
-        <label for="compasso">Qual o modelo de compasso?</label>
-        <div id="compasso">
-            <label for="compasso">Binário<input type="radio" name="compasso"></label>
-            <label for="compasso">Ternário<input type="radio" name="compasso"></label>
-            <label for="compasso">Quartenário<input type="radio" name="compasso"></label>
+        <label for="compassos">Qual o modelo de compasso?</label>
+        <div>
+            <label for="compassos">Binário<input type="radio" name="compassos" class="compassos"></label>
+            <label for="compassos">Ternário<input type="radio" name="compassos" class="compassos"></label>
+            <label for="compassos">Quartenário<input type="radio" name="compassos" class="compassos" checked='true'></label>
         </div>
         <button>Iniciar</button>
     </section>
@@ -22,3 +23,4 @@
         <div></div>
     </div>
 </body>
+</html>
