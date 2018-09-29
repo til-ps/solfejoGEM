@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR');
 body {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,9 +14,14 @@ body {
    background-color: red;
    position: relative;
 }
-#container {
+#container{
     animation: 2s levareContainer ease-out;
+    z-index: 0;
+}
+body>div {
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 section {
     display: flex;
@@ -30,6 +35,22 @@ section {
 section>* {
     margin-bottom: 20px;
 }
+.linhaDesenho {
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 80vh;
+    background-color: black;
+}
+
+/* .linhaDesenho:nth-child(3) {
+    transform: translate(20vh, 20vh) rotate(45deg);
+    height: 57vh;
+}
+.linhaDesenho:nth-child(4) {
+    transform: translate(20vh, -20vh) rotate(-45deg);
+    height: 57vh;
+} */
 @keyframes compasso4 {
     0% {
         transform: translateY(40vh);
