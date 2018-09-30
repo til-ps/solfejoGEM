@@ -20,7 +20,7 @@ function start() {
         linhaDesenho[2].style.height = "57vh";
         linhaDesenho[3].style.transform = "translate(20vh, -20vh) rotate(-45deg)";
         linhaDesenho[3].style.height = "57vh";
-    } else {
+    } else if(tipoDoCompasso === 3){
         linhaDesenho[2].style.transform = "translate(20vh, 20vh) rotate(45deg)";
         linhaDesenho[2].style.height = "57vh";
         linhaDesenho[3].style.transform = "translate(20vh, -20vh) rotate(-45deg)";
