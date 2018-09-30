@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR');
 body {
     margin: 0 auto;
     display: flex;
@@ -70,70 +69,3 @@ input[type="number"] {
     height: 80vh;
     background-color: black;
 } 
-@keyframes compasso4 {
-    0% {
-        transform: translateY(40vh);
-    }
-    25% {
-        transform: translateX(-40vh);
-    }
-    50% {
-        transform: translateX(40vh) ;
-    }
-    75% {
-        transform: translateY(-40vh);
-    }
-    100% {
-        transform: translateY(40vh);
-    }
-}
-@keyframes compasso3 {
-    0% {
-        transform: translateY(40vh);
-    }
-    33.3% {
-        transform: translateX(40vh);
-    }
-    66.6% {
-        transform: translateY(-40vh);
-    }
-    100% {
-        transform: translateY(40vh);
-    }
-}
-@keyframes compasso2 {
-    0% {
-        transform: translateY(20vh);
-    }
-    25% {
-        transform: translate(30vh, 35vh);
-    }
-    50% {
-        transform: translate(10vh, 5vh)
-    }
-    75% {
-        transform: translateY(-40vh);
-    }
-    100% {
-        transform: translateY(20vh);
-    }
-}
-@keyframes levare {
-    0% {
-        transform: translateY(40vh);
-    }
-    50% {
-        transform: translateY(-40vh);
-    }
-    100% {
-        transform: translateY(40vh);
-    }
-}
-@keyframes levareContainer {
-    0% {
-        transform: translateX(-40vh);
-    }
-    50% {
-        transform: translateX(0vh);
-    }
-}
