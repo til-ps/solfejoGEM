@@ -37,6 +37,12 @@ body>div {
     display: none;
     justify-content: center;
     align-items: center;
+    width: 100vh;
+    background-color: darkcyan;
+    z-index: -2;
+    height: 100vh;
+    border-left: 3px dotted white;
+    border-right: 3px dotted white;
 }
 #container{
     animation: 2s levareContainer ease-out;
@@ -46,7 +52,7 @@ body>div {
    height: 13vh;
    width: 13vh;
    border-radius: 50%;
-   background-color: red;
+   background-color: white;
    position: relative;
 }
 
@@ -67,5 +73,5 @@ input[type="number"] {
     z-index: -1;
     width: 3px;
     height: 80vh;
-    background-color: black;
+    background-color: white;
 } 
